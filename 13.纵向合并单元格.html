@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rowspan</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="0" width="400" height="300" align="center">
+        <caption>纵向合并单元格</caption>
+        <tr>
+            <!-- 删除的个数 = 合并的个数 - 1 -->
+            <td rowspan="4">单元格1</td>
+            <td>单元格2</td>
+            <td>单元格3</td>
+        </tr>
+        <tr>
+            
+            <td>单元格2</td>
+        </tr>
+        <tr>
+           
+            <td>单元格2</td>
+            <td>单元格3</td>
+        </tr>
+        <tr>
+            
+            <td>单元格2</td>
+            <td>单元格3</td>
+        </tr>
+    </table>
+    <table border="1" cellspacing="0" cellpadding="0" width="400" height="300" align="center">
+        <caption>购物车</caption>
+        <tr>
+            <th rowspan="2">名称</th>
+            <th colspan="2">2016-1-22</th>
+            <th rowspan="2">小计</th>
+        </tr>
+        <tr>
+            
+            <th>重量</th>
+            <th>单价</th>
+            
+        </tr>
+        <tr>
+            <td>苹果</td>
+            <td>3公斤</td>
+            <td>5元/公斤</td>
+            <td>15元</td>
+        </tr>
+        <tr>
+            <td>香蕉</td>
+            <td>2公斤</td>
+            <td>6元/公斤</td>
+            <td>12元</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">总价</td>
+            
+            <td>27元</td>
+        </tr>
+
+    </table>
+</body>
+</html>

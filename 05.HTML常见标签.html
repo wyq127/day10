@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- target 控制所有链接的打开方式   -->
+    <base target="_blank"/>
+    <title>html常见标签</title>
+</head>
+
+<body>
+    <!-- 会将多个空格合并成一个 
+        换行也会合并为一个空格
+        p段落标签
+    -->
+    <p>&lt;这是一个段落&gt;</p>
+    &nbsp;<!-- 空格 -->
+    <!-- 水平线标签: 只有宽度没有高度 -->
+    <hr width="400" />
+    <p dir="rtl">
+        海外网7月19日电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国国民党2020初选落幕，<br /><!-- break  换行标签   单标签 -->
+        最终韩国瑜击败其他对手出线，鸿海集团创办人郭台铭屈居第二。台媒称，15日初选记者会一结束，韩国瑜就曾马上发短信给郭台铭，表示“会赶快找时间来跟你拜会”。
+    </p>
+    <p>
+        　　据台湾“中时电子报”报道，台湾资深媒体人黄暐瀚爆料称，15日初选记者会一结束，韩国瑜就马上打电话给郭台铭，郭台铭当时没有接到，韩国瑜便改发短信说，“刚刚打电话您没接到，我会赶快找时间来跟你拜会。”
+    </p>
+    <p>
+        　　黄暐瀚指出，初选记者会当天中午12点17分，韩国瑜一离开国民党中央，就立刻打电话给郭台铭，但因为郭台铭有两支电话，电话当时未能接通，韩国瑜怕他打的那支电话，郭台铭没带在身上，于是便赶快补发短信，称“台铭大学长，我是国瑜，刚刚打电话您没接到，我会赶快找时间来跟你拜会。”之后韩国瑜还告诉他认识的两个非常贴近郭台铭的幕僚，把同样的内容传过去。
+    </p>
+    <p>
+        　　黄暐瀚指出，国民党初选民调结果公布后，社会上出现了一些不同的声音，韩国瑜也很担心一些不是那么喜欢他的国民党支持者会离开，所以他除了要把郭台铭拉回来，也要把朱立伦、周锡玮、张亚中全部都拉回来。
+    </p>
+
+    <div>
+        这是一个div标签
+    </div>
+    <span>这是一个span标签</span>
+
+    <b>加粗</b>
+    <strong>加粗</strong>
+    <i>斜体</i>
+    <em>斜体</em>
+    <s>删除线</s>
+    <del>删除线</del>
+    <u>下划线</u>
+    <ins>下划线</ins>
+    <!-- 
+    src: 图片路径
+    alt: 图片无法显示时显示的内容
+    title: 鼠标悬停时显示的内容
+    width: 设置图片的宽度>>>只设置宽度时高度会根据纵横比自动变化
+    height: 高度
+ -->
+    <!-- <img width="400" border="20" src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike220%2C5%2C5%2C220%2C73/sign=7dd96b009f2397ddc274905638ebd9d2/91ef76c6a7efce1b85f79a2da151f3deb58f657c.jpg" alt="杨超越" title="杨超越的图片"> -->
+    <!-- 外部链接 -->
+    <a href="http://www.baidu.com">百度一下</a>
+    <!-- 内部链接    target _self:在当前页面中打开    _blank: 在新窗口打开 -->
+    <a href="06.新闻页面.html" target="_self">新闻页面</a>
+    <!-- 图片作为链接 -->
+    <a href="06.新闻页面.html">
+        <img width="400" border="20"
+            src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike220%2C5%2C5%2C220%2C73/sign=7dd96b009f2397ddc274905638ebd9d2/91ef76c6a7efce1b85f79a2da151f3deb58f657c.jpg"
+            alt="杨超越" title="杨超越的图片">
+    </a>
+    <a href="#">空链接</a>
+</body>
+
+</html>

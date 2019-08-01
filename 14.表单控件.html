@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+</head>
+
+<body>
+    <p>这是一个段落</p>
+    <form action="06.新闻页面.html" method="get">
+
+        <!-- 文本域 -->
+        <!-- 
+            区别 : 
+            1. input控件的一个属性
+               textarea:是一个单独的标签
+            2. 只能输入一行
+                可以输入多行文本
+
+
+         -->
+        <textarea name="textarea" id="" cols="10" rows="2"></textarea>
+
+        <!-- 下拉选项 -->
+        <!-- 标签中的内容为展示给用户的内容 ,提交的内容要写在value值里面 -->
+        <select>
+            <option value="">1990</option>
+            <option value="">1991</option>
+            <option value="">1992</option>
+            <option value="" selected="selected">1993</option>
+            <option value="">1994</option>
+            <option value="">1995</option>
+        </select>年
+        <select>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="" selected>5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+        </select>月
+        <!-- method: 用于控制提交方式
+            input控件: 要被提交: 必须要有name
+            单选  多选按钮组: 通过value设置提交的内容
+        通过设置相同的name属性进行连接成为按钮组
+        checked: 默认选中某个按钮
+        -->
+        <!-- label 通过for属性+id属性进行控件绑定 使其获得焦点,点击效果 -->
+        <!-- text 单行文本输入框 -->
+        <label for="name">姓名: </label><input type="text" name="username" id="name" /><br>
+        <!-- 密码框 -->
+        密码:<input type="password" name="password" />
+        <!-- 单选按钮 : 通过设置相同的name属性进行连接成为单选按钮组 -->
+        <input type="radio" name="sex" id="man" checked value="男"><label for="man">男</label>
+        <input type="radio" name="sex" id="woman" value="nv"><label for="woman">女</label><br>
+        <!-- checked  -->
+        爱好:
+        <!-- 多选按钮组 -->
+        <input type="checkbox" name="hobbies" id="" checked>游泳
+        <input type="checkbox" name="hobbies" id="" value="看书">看书
+        <input type="checkbox" name="hobbies" id="" checked>打游戏
+        <input type="checkbox" name="hobbies" id="">学习
+        <!-- 按钮 -->
+        <input type="button" value="这是一个测试按钮">
+        <!-- 图片提交按钮 -->
+        <input type="image" src="p1.jpg" width="200" alt="">
+        <!-- 文件选择 -->
+        <input type="file" name="file" id="">
+        <!-- 提交按钮 -->
+        <input type="submit" value="登录">
+        <!-- 重置按钮 -->
+        <input type="reset">
+    </form>
+</body>
+
+</html>
